@@ -1,0 +1,156 @@
+
+
+:root {
+	--color1: #e63946;
+	--color2: #f1faee;
+	--color3: #a8dadc;
+	--color4: #457b9d;
+	--color5: #1d3557;
+}
+
+
+body{
+	background-color: var(--color2);
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+
+}
+body h1 {
+	text-align: center;
+	color: var(--color2);
+	margin-left: 0;
+	margin-right: 0;
+	color: var(--color1);
+	font-family: Angkor
+}
+.header-banner{
+	top: 0;
+	width: 100%;
+	background: rgb(168,218,220);
+	background: linear-gradient(180deg, rgba(168,218,220,1) 60%, rgba(241,250,238,1) 100%);
+}
+
+#reset{
+	width: 2em;
+	height: 2em;
+	font-size: 2em;
+	text-align: center;
+	text-justify: center;
+	margin: auto;
+	background-color: var(--color1);
+	border-radius: 50%;
+	border: 1px solid var(--color3);
+	color: var(--color2);
+}
+
+
+
+.header{
+	display: flex;
+	text-align: center;
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 2em;
+	margin-bottom: 50px;
+
+}
+
+.messagebox{
+	position: absolute;
+	left: 15%;
+	top: 50%;
+	width: 20%;
+	min-width: 400px;
+	min-height: 200px;
+	background-color: var(--color4);
+	border-radius: 10px;
+	border-color: var(--color3);
+	color: var(--color2);
+	box-shadow: -5px -0px 5px 0px var(--color3);
+	font-size: 4em;
+	text-align: center;
+}
+
+
+.board{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	margin: auto;
+	width: 650px;
+	height: 650px;
+	min-width: 400px;
+	min-height: 400px;
+	background-color: var(--color5);
+	box-shadow: -2px 2px 2px 2px var(--color4);
+}
+
+
+.board-grid{
+	margin: auto auto auto auto;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(3,1fr);
+	gap: 10px;
+	width: 600px;
+	height: 600px;
+	min-width: 300px;
+	min-height: 300px;
+	background-color: var(--color5);
+
+}
+
+.cell {
+	display: flex;
+	background-color: var(--color3);
+	border-radius: 50%;
+	transition: background-color 0.2s ease-in-out;
+	text-align: center;
+	text-justify: center;
+	align-items: center;
+	justify-items: center;
+}
+.cell:hover {
+	background-color: var(--color4);
+	transition: background-color 0.2s ease-in-out;
+}
+
+.cell img{
+	padding: 0;
+	margin: auto;
+	max-width: 75%;
+	max-height: 75%;
+}
+
+
+.playername {
+	font-size: 2em;
+	color: var(--color1);
+}
+
+.playername input{
+	font-size: 1em;
+	color: var(--color1);
+	border-radius: 5px;
+	border: 3px solid var(--color1);
+
+}
+
+#player-x{
+	position: absolute;
+	top: 40%;
+	left: 10%;
+
+}
+
+#player-o{
+	position: absolute;
+	top: 40%;
+	right: 10%;
+
+}
+
+
